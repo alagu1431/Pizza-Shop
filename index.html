@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+    
+<script src="js/jquery-3.1.0.js"></script>
+   
+ <script src="js/scripts.js"></script>
+    <title>Pizza</title>
+
+  </head>
+  
+<body>
+   <div class="container">
+     <div class="jumbotron">
+     <h1>Blink Pizza</h1>
+ 
+  </div>
+     <div class="row">
+       <div class="col-sm-4">
+         <h2>Sizes</h2>
+         
+<form id = "orderForm">
+           <div id = "pizza-order">
+             <div class="second-pizza">
+               <select class="form-control pizza-size">
+                 <option value="6">Small</option>
+                 <option value="8">Medium</option>
+                 <option value="10">Large</option>
+               </select>
+               <p>
+                 prices for pizza are sm-RS.6, md-Rs.8, an lg-Rs.10
+               </p>
+               <h2>Toppings</h2>
+               <h3>Each topping is an extra Rs.1</h3>
+               <div class="checkbox">
+                 <label><input type="checkbox" name="toppings" value="1">pepperoni</label>
+               </div>
+               <div class="checkbox">
+                 <label><input type="checkbox" name="toppings" value="1">sausage</label>
+               </div>
+               <div class="checkbox">
+                 <label><input type="checkbox" name="toppings" value="1">garlic crust</label>
+               </div>
+             </div>
+           </div>
+           <span class="btn btn-warning" id="add-more-pizza">Let's get another one </span>
+           <button type="submit" class="btn btn-danger">Place Order</button>
+         </form>
+       </div>
+       <div class="col-sm-4">
+         <div id="show-pizza-results">
+           <h2>Your Pizza Order:</h2>
+           <div id="pizza-price">
+             <ul>
+             </ul>
+           </div>
+           <h1 id="final-total"></h1>
+         </div>
+       </div>
+     </div>
+   </div>
+ </body>
+</html>
